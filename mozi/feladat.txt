@@ -15,4 +15,5 @@ AAAAAA	Fellini		12:15	Q5 f
 BBBBBB	Coppola	19:45	P15 f	
 BBBBBB	Coppola	19:45	S7 d	S8 d 	S9 d 	S10 d
 
-FELADAT: Válaszolja meg az alábbi kérdést: Volt-e olyan jegyvásárlás (olyan sor), ahol csak diákjegyet vettek, de legalább 3000 Ft értékben? 
+FELADAT: 
+Válaszolja meg az alábbi kérdést: Volt-e olyan jegyvásárlás (olyan sor), ahol csak diákjegyet vettek, de legalább 3000 Ft értékben? 
