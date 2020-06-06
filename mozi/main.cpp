@@ -52,7 +52,7 @@ public:
 		std::stringstream ss(dx);
 		ss >> obj.mid >> obj.rid >> obj.time;
 		obj.tickets.clear();	//FONTOS!!! 
-								//Szükséges clearelni a vectort, mert különben benne marad az előző "sor" adata
+					//Szükséges clearelni a vectort, mert különben benne marad az előző "sor" adata
 
 		StringStreamEnumerator<ticket> sstreamEnum(ss);
 		TicketGenerator ticketgen;
@@ -102,10 +102,10 @@ public:
 
 int main() {
 	SeqInFileEnumerator<record> Q("test.txt");  //enumerator ami beolvas egy fájlt amiben record típusok vannak tárolva
-	Result B; 									//Az summiton ami megoldja a feladatott (lásd fentebb)
-	B.addEnumerator(&Q); 						//Ha leszármaztatunk egy osztályból (gtlibben) és nem enumarator (abból SOHA nem származtatunk le [nagy pain in the ass])
-						 						//akkor mindig hozzá kell adni egy enumerator-t amin végig menjen a summation/stb...
-	B.run();									//FUTATNI IS MINDIG KELL mert akkor fog megtörténi a "csoda"
+	Result B; 				    //Az summiton ami megoldja a feladatott (lásd fentebb)
+	B.addEnumerator(&Q); 			    //Ha leszármaztatunk egy osztályból (gtlibben) és nem enumarator (abból SOHA nem származtatunk le [nagy pain in the ass])
+						    //akkor mindig hozzá kell adni egy enumerator-t amin végig menjen a summation/stb...
+	B.run();				    //FUTATNI IS MINDIG KELL mert akkor fog megtörténi a "csoda"
 	//miután futtatuk utána (általában) a resultban van a végeredmény
 
 	//itt megszámolta, hogy hány darab olyan sor volt ahol minden jegyet diák vett és legalább 3000 értékben
