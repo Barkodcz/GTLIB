@@ -1,0 +1,5 @@
+AAAAAA Jancs� 10:15 O9 g O10 g O11 f
+AAAAAA Fellini 12:15 B3 g B4 f B5 f
+AAAAAA Fellini 12:15 Q5 f
+BBBBBB Coppola 19:45 P15 f
+BBBBBB Coppola 19:45 S7 d S8 d S9 d S10 d
