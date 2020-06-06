@@ -1,0 +1,18 @@
+Egy szekvenciális inputfájlban egy mozi egy napi vetítései és jegyeladási forgalma található. 
+A fájl egy eleme egy vásárlás adatait tartalmazza szóközökkel tagolva: 
+a vetített film azonosítóját (6 karakter), a vetítés termének nevét (ez szóközt nem tartalmaz), 
+a vetítés kezdetének idejét (HH:MM formában), 
+majd ezt követően a megvásárolt jegyeket. 
+
+Egy jegy tartalmazza a szék pozícióját (ez egy sztring, amely a sort jelző betűből és a széket jelző számból áll), 
+valamint a jegy árát jelző karaktert: gyermekjegy (g) – 500 forint, diákjegy (d) – 800 forint, felnőttjegy (f) – 1000 forint. 
+A fájl sorai kezdési időpontok szerint rendezettek. Egy adott időpontban legfeljebb egy film vetítése kezdődhet. 
+
+Példa bemenet:
+AAAAAA	Jancsó		10:15	O9 g	O10 g 	O11 f
+AAAAAA	Fellini		12:15	B3 g	B4 f	B5 f
+AAAAAA	Fellini		12:15	Q5 f	 
+BBBBBB	Coppola	19:45	P15 f	
+BBBBBB	Coppola	19:45	S7 d	S8 d 	S9 d 	S10 d
+
+FELADAT: Válaszolja meg az alábbi kérdést: Volt-e olyan jegyvásárlás (olyan sor), ahol csak diákjegyet vettek, de legalább 3000 Ft értékben? 
