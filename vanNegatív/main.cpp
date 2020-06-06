@@ -22,8 +22,8 @@ public:
     //Ez a sor nélkül is működdik, de inkább legyen ott
     ReadSum() : Summation<int, std::vector<int>>::Summation() {}
 protected:
-    int func(const int& e) const { return e; }
-    bool cond(const int& e) const { return true; }
+    int func(const int& e) const override { return e; }
+    bool cond(const int& e) const override { return true; }
 };
 
 //Az osztály ami a feladatott megoldja summation
@@ -33,13 +33,11 @@ class NegativSum : public Summation<int>
 public:
 	NegativSum(std::vector<int> x) : _x(x), Summation<int>::Summation() { }
 protected:
-    int func(const int& e) const { return 1;}
-    int neutral() const { return 0;}
-    int add( const int& a, const int& b) const { return a + b;}
+    int func(const int& e) const override { return 1;}
+    int neutral() const override { return 0;}
+    int add( const int& a, const int& b) const override { return a + b;}
 
-    bool cond(const int& e) const { 
-        return _x[e] < 0; 
-    }
+    bool cond(const int& e) const override { return _x[e] < 0; }
 private:
     std::vector<int> _x;
 };
