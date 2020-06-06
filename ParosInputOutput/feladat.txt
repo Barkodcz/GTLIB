@@ -1,0 +1,1 @@
+Feladat: Egy input fájból egy output fájlba kell bele írni csak a páros elemeket.
