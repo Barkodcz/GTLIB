@@ -1,0 +1,2 @@
+Futtatáskor adjuk meg, hogy hanyadik indextől hanyadik indexig vizsgálja meg a program, 
+hogy az input fájl tartalmaz-e negatív számot.
