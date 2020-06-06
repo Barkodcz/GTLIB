@@ -1,2 +1,4 @@
-Futtatáskor adjuk meg, hogy hanyadik indextől hanyadik indexig vizsgálja meg a program, 
-hogy az input fájl tartalmaz-e negatív számot.
+Adva van a,b és tudjuk, hogy a < b. Továbbá adott egy szekvenciális inputfájl, amiben egészek találhatóak. 
+Ezeket olvassuk be egy tömbbe (a könyvtárat használva). Létezik-e negatív szám a tömbben a és b indexek között?
+
+Programnak konzolból paraméterezhetőnek kell lennie. Ahol a paraméter a bemeneti fájl neve kiterjesztés nélkül.
