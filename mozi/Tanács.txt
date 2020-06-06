@@ -1,1 +1,4 @@
-Tanácsok:
+Amire figyelni kellett/érdekes/trükkös volt.
+Trükkös volt, hogy meg kellett oldani, hogy nem meghatározott mennyiségű adatott kellett egymás után beolvasni (a jegyek egymás után).
+Érdekes/figyelni kellett, hogy több segéd osztályt is be kellett vezetni a feladat megoldáshoz. Ez nagyon hasznos ZH-ban is hiszen nem lehet használni ciklusokat csak ami gtlibben van benne.
+
