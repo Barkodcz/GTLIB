@@ -1,5 +1,5 @@
 /************************************\
- *Készítette: Barkó Balázs	        *
+ *Készítette: Barkó Balázs	    *
  *Dátum: 2020.06.06.	    	    *
  *Feladat leírása feladat.txt-ben   *
  *                                  *
