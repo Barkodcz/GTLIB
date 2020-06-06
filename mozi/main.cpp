@@ -1,9 +1,9 @@
 /************************************\
- *Készítette: Kocsis Máté	 		*
- *Dátum: 2020.06.06.				*
- *Feladat leírása feladat.txt-ben	*
- *							  		*
- *Kommentelte: Barkó Balázs  		*
+ *Készítette: Kocsis Máté	    *
+ *Dátum: 2020.06.06.	    	    *
+ *Feladat leírása feladat.txt-ben   *
+ *                                  *
+ *Kommentelte: Barkó Balázs         *
 \***********************************/
 
 #include <iostream>
