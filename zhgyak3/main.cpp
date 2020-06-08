@@ -1,3 +1,9 @@
+/************************************\
+ *Készítette: Kocsis Máté	    *
+ *Dátum: 2020.06.06.	    	    *
+ *Feladat leírása feladat.txt-ben   *
+\***********************************/
+
 #include <iostream>
 #include <sstream>
 #include <vector>
