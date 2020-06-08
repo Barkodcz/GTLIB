@@ -1,0 +1,20 @@
+A Duna vízállását különböző helyszíneken, különböző időpontokban mérik, 
+és az adatokat egy szöveges állományban rögzítik. 
+Az állomány egy sora egy adott helyszínen egy adott
+ napon mért adatokat tartalmazza: a helyszín nevét (szóközök nélküli sztring),
+ a napi dátumot (YYYY.MM.DD alakú sztring), 
+majd a méréseket. Minden mérés egy időbélyegből (HH:MM alakú sztring)
+ és egy vízállásból (egész szám cm-ben) áll.
+ Az adatokat szóközök és/vagy tabulátorjelek választják el. 
+Az állomány helyszínek szerint, azon belül dátumok szerint rendezett.
+
+Példa az input fájl soraira:
+
+Budapest 2019.06.05 08:30 730 12:30 740 20:30 755
+Komárom 2019.06.03 08:30 630 12:30 640 20:30 670
+Komárom 2019.06.04 08:30 680 12:30 665 20:30 645
+Komárom 2019.06.05 08:30 630 12:30 615 20:30 595
+
+Megfelelt szint (közepes): Válaszolja meg az alábbi kérdést: 
+Igaz-e minden olyan sorra, mely legalább három mérési adatot tartalmaz,
+hogy ezek közül legalább egyszer 600 cm-nél magasabb vízállást mértek.
