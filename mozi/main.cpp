@@ -10,10 +10,10 @@
 #include <vector>
 #include <sstream>
 #include <string>
-#include "..\library\summation.hpp"
-#include "..\library\stringstreamenumerator.hpp"
-#include "..\library\arrayenumerator.hpp"
-#include "..\library\seqinfileenumerator.hpp"
+#include "../library/summation.hpp"
+#include "../library/stringstreamenumerator.hpp"
+#include "../library/arrayenumerator.hpp"
+#include "../library/seqinfileenumerator.hpp"
 
 //Eltárolja, hogy kik vettek jegyett
 struct ticket {
@@ -25,6 +25,28 @@ struct ticket {
 		is >>obj.Qid >>obj.g;
 		return is;
 	}
+};
+
+
+//Segédosztály, segítségével egy StringStreamEnumerator-ból megkaphatjuk vectorban ami a sstream-ben van
+class TicketGenerator:public Summation<ticket,std::vector<ticket> >{
+protected:
+	ticket func(const ticket& e) const override{ return e; }
+	bool cond(const ticket& e) const override{ return true; }
+public:
+	TicketGenerator() : Summation<ticket, std::vector<ticket> >::Summation() {}
+};
+
+//Segédosztály, segítségével megszámoljuk, hány darab diák vett jegyett
+class StudentCount :public Summation< ticket, int > {
+protected:
+	int func(const ticket& e) const override{ return 1; }
+	int neutral() const override{return 0;}
+	int add(const int& a, const int& b) const override{ return a + b; }
+	virtual bool  cond(const ticket& e) const override{ return e.g == 'd'; }
+
+public:
+	StudentCount() :Summation<ticket, int> ::Summation() {}
 };
 
 //Eltárol egy-egy sor adatát
@@ -64,27 +86,6 @@ public:
 		return is;
 	}
 	
-};
-
-//Segédosztály, segítségével egy StringStreamEnumerator-ból megkaphatjuk vectorban ami a sstream-ben van
-class TicketGenerator:public Summation<ticket,std::vector<ticket> >{
-protected:
-	ticket func(const ticket& e) const override{ return e; }
-	bool cond(const ticket& e) const override{ return true; }
-public:
-	TicketGenerator() : Summation<ticket, std::vector<ticket> >::Summation() {}
-};
-
-//Segédosztály, segítségével megszámoljuk, hány darab diák vett jegyett
-class StudentCount :public Summation< ticket, int > {
-protected:
-	int func(const ticket& e) const override{ return 1; }
-	int neutral() const override{return 0;}
-	int add(const int& a, const int& b) const override{ return a + b; }
-	virtual bool  cond(const ticket& e) const override{ return e.g == 'd'; }
-
-public:
-	StudentCount() :Summation<ticket, int> ::Summation() {}
 };
 
 //Az osztály ami megoldja az egész feladatott.
