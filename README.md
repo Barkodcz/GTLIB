@@ -8,3 +8,6 @@ Egy-egy mappában (próbálok mindig rakni)
 A gtlib-es fájlok a library mappában vannak és úgy vannak megcsinálva a fájlok, hogy ha letöltitek a repository akkor egyből tudjátok futtatni a programokat.
 
 Ha van esetleg neketek is kész kódotok és szeretnétek, hogy közösen tanuljunk belőle akkor, ha elküldtitek <3 akkor felkerül ide :)
+
+Code::Blocks-al:
+create new project --> jobb click project --> build options --> Debug --> Search directories --> Compiler (Policy: Append target options to project optiions) --> Add (Directory-nál meg kell mondani, hogy hol van a gtlib) --> Ok --> Ok
