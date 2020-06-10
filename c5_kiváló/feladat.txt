@@ -1,0 +1,13 @@
+Az Országos Horgász Bajnokság mindegyik versenyén feljegyezték a versenyzpk eredményeit, 
+és egy szöveges állományban rögzítették az adatokat. 
+Ennek minden sora tartalmazza a versenyző horgász és a verseny azonosítóját (szóközök nélküli sztring), 
+majd halfajta-méret párok (szóközök nélküli sztring és természetes szám párok) formájában az adott versenyen elért fogásokat. 
+Az adatok szóközökkel vagy tabulátorjelekkel vannak egy soron belül elválasztva. 
+A szöveges állomány sorait horgászok szerint rendezték. Feltehetjük, hogy a szöveges állomány helyesen van kitöltve.
+Példa az állomány egy sorára:
+JANI Kiliti0512 Ponty 45 Ponty 53 Harcsa 96
+
+Feladat (Kiváló szint): Melyik az a ahorgász, 
+aki az összes versenyét tekintve a legkisebb összsúlyú fogást tudhatja magáénak azon horgászok közül, 
+akik fogásainak összesített súlya meghaladta a 40 kg-ot? 
+Adjuk meg a megtalált horgász fogásainak összesített súlyát is!
